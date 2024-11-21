@@ -120,3 +120,10 @@ Thanks to all contributors for their enthusiastic contributions.
 <a href="https://github.com/apache/flink-cdc/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=apache/flink-cdc"/>
 </a>
+
+
+### 编译
+
+```shell
+mvn install -DskipTests
+```

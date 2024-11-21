@@ -41,6 +41,7 @@ limitations under the License.
         <module>flink-cdc-runtime</module>
         <module>flink-cdc-e2e-tests</module>
         <module>flink-cdc-pipeline-udf-examples</module>
+        <module>flink-cdc-k8s-bootstrap</module>
     </modules>
 
     <licenses>
@@ -670,6 +671,23 @@ limitations under the License.
             </plugin>
         </plugins>
     </build>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <!-- Add Spring repositories -->
+    <!-- (you don't need this if you are using a .RELEASE version) -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
 
     <profiles>
         <profile>
